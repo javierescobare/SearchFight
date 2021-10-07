@@ -8,7 +8,17 @@ You need to have .NET Core installed.
 
 ## How to run
 
-1. Open your terminal and run this command passing the terms you want to search as arguments separated by spaces:
+1. Put your API keys in the `appSettings.json` file.
+
+```javascript
+{
+    "BingApiKey": "YOUR_BING_API_KEY",
+    "GoogleApiKey": "YOUR_GOOGLE_API_KEY",
+    "GoogleCx": "YOUR_GOOGLE_CONTEXT_PARAMETER"
+}
+```
+
+2. Open your terminal and run this command passing the terms you want to search as arguments separated by spaces:
 
 ```bash
 dotnet run --project SearchFight.Client -- [your-terms]
